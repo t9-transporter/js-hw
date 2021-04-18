@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
+  </head>
+  <body>
+    <div class="flex m-rem">
+      <button class="btn1 btnSize">Нажми на меня!</button>
+      <div id="hi1" class="hello">Привет!</div>
+    </div>
+
+    <div class="flex m-rem">
+      <button class="btn2 btnSize">Наведи на меня!</button>
+      <div id="hi2" class="hello">Привет!</div>
+    </div>
+
+    <div class="flex m-rem">
+      <button class="btn3 btnSize">Двойной клик по мне!</button>
+      <div id="hi3" class="hello">Привет!</div>
+    </div>
+
+    <div class="flex m-rem">
+      <p class="p-out">Наведи на меня мышь - а потом убери!</p>
+      <div id="hi4" class="hello">Привет!</div>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt" type="text" placeholder="введите текст" />
+      </form>
+      <button class="btn5 btnSize">Нажми на меня!</button>
+      <div id="hi5" class="hello">123</div>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt1" type="text" placeholder="введите текст" />
+      </form>
+      <button class="btn6 btnSize">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <div class="monkey"></div>
+      <button class="btn7 btnSize">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input type="text" onclick="nptClick()" value="Нажми на меня!" />
+      </form>
+      <div id="hi8" class="hello">Привет!</div>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt2"
+          type="text"
+          onclick="nptChange(this)"
+          value="Нажми на меня!"
+        />
+      </form>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt3"
+          type="text"
+          onclick="nptChange2(this)"
+          value="Нажми на меня!"
+        />
+      </form>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt4"
+          type="submit"
+          onclick="nptChange3(this); return false"
+          value="Нажми на меня!"
+        />
+      </form>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt5"
+          type="submit"
+          onclick="nptChange4(this); return false"
+          value="Нажми на меня!"
+        />
+      </form>
+    </div>
+
+    <div class="flex m-rem">
+      <div
+        class="monkey2"
+        onmouseover="nptChange5(this)"
+        onmouseout="nptChange5(this)"
+      ></div>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt6" type="text" value="ку-ку" />
+      </form>
+      <button class="btn8 btnSize" onclick="nptCss()">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt7" type="text" value="Ку-ку" />
+      </form>
+      <button class="btn9 btnSize" onclick="nptCssHide()">
+        Нажми на меня!
+      </button>
+      <button class="btn10 btnSize" onclick="nptCssShow()">
+        Нажми потом на меня!
+      </button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt8" type="text" value="ку-ку" />
+      </form>
+      <button class="btn11 btnSize" onclick="nptCssEpic()">
+        Нажми на меня!
+      </button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt9"
+          type="submit"
+          onclick="nptChange6(); return false"
+          value="Нажми на меня!"
+        />
+        <input
+          class="npt10"
+          type="submit"
+          onclick="nptChange7(); return false"
+          value="Нажми на меня чтобы все исправить!"
+        />
+      </form>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt11"
+          type="submit"
+          value="0"
+          onclick="nptCounter(); return false"
+        />
+      </form>
+    </div>
+
+    <div class="grid swap">
+      <form action="" class="swap-form">
+        <input class="npt12" type="text" value="ку-ку" />
+      </form>
+      <button class="btn12 btnSize">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="qqq www eee" type="text" value="ку-ку" />
+      </form>
+      <button class="btn13 btnSize">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt13" type="text" value="Привет!" />
+        <input class="npt14" type="text" value="Пока!" />
+      </form>
+      <button class="btn14 btnSize" onclick="fixSwap()">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt15" type="number" placeholder="введите число" />
+        <input class="npt16" type="submit" disabled value="здесь результат" />
+      </form>
+      <button class="btn15 btnSize" onclick="sqr()">Нажми на меня!</button>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input class="npt17" type="text" placeholder="введите число" />
+        <input class="npt18" type="submit" disabled value="здесь результат" />
+      </form>
+      <button class="btn15 btnSize" onclick="sqrCheck();">
+        Нажми на меня!
+      </button>
+      <div id="hi10" class="hello">Нужно вводить число!</div>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input
+          class="npt19"
+          type="submit"
+          onclick="disPointer(this); return false"
+          value="Нажми на меня!"
+        />
+      </form>
+    </div>
+
+    <div class="flex m-rem">
+      <form action="">
+        <input type="text" class="npt20" />
+        <input
+          type="submit"
+          class="plus"
+          value="+"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="minus"
+          value="-"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="slash"
+          value="/"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="multiply"
+          value="*"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="one"
+          value="1"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="two"
+          value="2"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="three"
+          value="3"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="four"
+          value="4"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="five"
+          value="5"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="six"
+          value="6"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="seven"
+          value="7"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="eight"
+          value="8"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="nine"
+          value="9"
+          onclick="addMyValue(this); return false"
+        />
+        <input
+          type="submit"
+          class="zero"
+          value="0"
+          onclick="addMyValue(this); return false"
+        />
+      </form>
+    </div>
+  </body>
+</html>

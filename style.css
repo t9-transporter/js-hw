@@ -1,0 +1,136 @@
+body {
+  padding: 1rem 5%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.m-rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bd {
+  border: red solid 1px;
+}
+
+.hello {
+  margin-left: 1rem;
+  border-radius: 5px;
+  background-color: rgb(46, 109, 224);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+  display: none;
+}
+
+.hello-active {
+  display: block;
+}
+
+.p-out {
+  border: 1px solid red;
+  padding-bottom: 10rem;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.monkey,
+.monkey2 {
+  width: 10rem;
+  height: 8rem;
+  background-image: url(http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
+.monkey-active,
+.monkey2-active {
+  background-image: url(http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/2.jpg);
+}
+
+.npt6-active {
+  color: red;
+  padding-right: 5rem;
+}
+
+.npt7-active {
+  display: none;
+}
+
+.npt8-active {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: red;
+}
+
+.npt10 {
+  display: none;
+}
+
+.npt10-active {
+  display: block;
+}
+
+.swap {
+  grid-template-columns: 13rem 13rem;
+  grid-template-rows: 3rem;
+  gap: 3rem;
+}
+
+.swap-form {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.btn12 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.swap-form-active {
+  grid-column: 2/3;
+}
+
+.btn12-active {
+  grid-column: 1/2;
+}
+
+.npt,
+.npt1,
+.npt2,
+.npt3,
+.npt4,
+.npt5,
+.npt6,
+.npt7,
+.npt8,
+.npt9,
+.npt10,
+.npt11,
+.npt12,
+.npt13,
+.npt14,
+.npt15,
+.npt16,
+.npt17,
+.qqq,
+.npt18,
+.npt19,
+.npt20,
+.btnSize {
+  width: 15rem;
+  margin-right: 1rem;
+}
+
+.pointer-active {
+  cursor: not-allowed;
+}
